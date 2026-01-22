@@ -91,10 +91,10 @@ const Home = () => {
                 <Image
                   source={images.noResult}
                   className="w-40 h-40"
-                  alt="No recent rides found"
+                  alt="Aucun trajet récent trouvé"
                   resizeMode="contain"
                 />
-                <Text className="text-sm">No recent rides found</Text>
+                <Text className="text-sm">Aucun trajet récent trouvé</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -105,7 +105,7 @@ const Home = () => {
           <>
             <View className="flex flex-row items-center justify-between my-5">
               <Text className="text-2xl font-JakartaExtraBold">
-                Welcome {user?.firstName}👋
+                Bienvenue {user?.firstName}👋
               </Text>
               <TouchableOpacity
                 onPress={handleSignOut}
@@ -123,7 +123,7 @@ const Home = () => {
 
             <>
               <Text className="text-xl font-JakartaBold mt-5 mb-3">
-                Your current location
+                Votre emplacement actuel
               </Text>
               <View className="flex flex-row items-center bg-transparent h-[300px]">
                 <Map />
@@ -131,7 +131,7 @@ const Home = () => {
             </>
 
             <Text className="text-xl font-JakartaBold mt-5 mb-3">
-              Recent Rides
+              Trajets récents
             </Text>
           </>
         }

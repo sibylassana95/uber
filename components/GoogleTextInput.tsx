@@ -19,7 +19,7 @@ const GoogleTextInput = ({
     >
       <GooglePlacesAutocomplete
         fetchDetails={true}
-        placeholder="Search"
+        placeholder="Rechercher"
         debounce={200}
         styles={{
           textInputContainer: {
@@ -61,7 +61,7 @@ const GoogleTextInput = ({
         }}
         query={{
           key: googlePlacesApiKey,
-          language: "en",
+          language: "fr",
         }}
         renderLeftButton={() => (
           <View className="justify-center items-center w-6 h-6">
@@ -74,7 +74,7 @@ const GoogleTextInput = ({
         )}
         textInputProps={{
           placeholderTextColor: "gray",
-          placeholder: initialLocation ?? "Where do you want to go?",
+          placeholder: initialLocation ?? "Où voulez-vous aller ?",
         }}
       />
     </View>

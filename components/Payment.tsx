@@ -125,7 +125,7 @@ const Payment = ({
   return (
     <>
       <CustomButton
-        title="Confirm Ride"
+        title="Confirmer le trajet"
         className="my-10"
         onPress={openPaymentSheet}
       />
@@ -138,16 +138,16 @@ const Payment = ({
           <Image source={images.check} className="w-28 h-28 mt-5" />
 
           <Text className="text-2xl text-center font-JakartaBold mt-5">
-            Booking placed successfully
+            Réservation effectuée avec succès
           </Text>
 
           <Text className="text-md text-general-200 font-JakartaRegular text-center mt-3">
-            Thank you for your booking. Your reservation has been successfully
-            placed. Please proceed with your trip.
+            Merci pour votre réservation. Votre réservation a été placée avec succès.
+            Veuillez poursuivre votre voyage.
           </Text>
 
           <CustomButton
-            title="Back Home"
+            title="Retour à l'accueil"
             onPress={() => {
               setSuccess(false);
               router.push("/(root)/(tabs)/home");

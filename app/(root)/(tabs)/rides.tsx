@@ -34,10 +34,10 @@ const Rides = () => {
                 <Image
                   source={images.noResult}
                   className="w-40 h-40"
-                  alt="No recent rides found"
+                  alt="Aucun trajet récent trouvé"
                   resizeMode="contain"
                 />
-                <Text className="text-sm">No recent rides found</Text>
+                <Text className="text-sm">Aucun trajet récent trouvé</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -46,7 +46,7 @@ const Rides = () => {
         )}
         ListHeaderComponent={
           <>
-            <Text className="text-2xl font-JakartaBold my-5">All Rides</Text>
+            <Text className="text-2xl font-JakartaBold my-5">Tous les trajets</Text>
           </>
         }
       />

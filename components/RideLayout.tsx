@@ -36,7 +36,7 @@ const RideLayout = ({
               </View>
             </TouchableOpacity>
             <Text className="text-xl font-JakartaSemiBold ml-5">
-              {title || "Go Back"}
+              {title || "Retour"}
             </Text>
           </View>
 
@@ -48,7 +48,7 @@ const RideLayout = ({
           snapPoints={snapPoints || ["40%", "85%"]}
           index={0}
         >
-          {title === "Choose a Rider" ? (
+          {title === "Choisir un chauffeur" ? (
             <BottomSheetView
               style={{
                 flex: 1,
