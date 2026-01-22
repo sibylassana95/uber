@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
     if (!payment_method_id || !payment_intent_id || !customer_id) {
       return new Response(
-        JSON.stringify({ error: "Missing required fields" }),
+        JSON.stringify({ error: "Champs requis manquants" }),
         { status: 400 },
       );
     }
@@ -27,13 +27,13 @@ export async function POST(request: Request) {
     return new Response(
       JSON.stringify({
         success: true,
-        message: "Payment successful",
+        message: "Paiement réussi",
         result: result,
       }),
     );
   } catch (error) {
-    console.error("Error paying:", error);
-    return new Response(JSON.stringify({ error: "Internal Server Error" }), {
+    console.error("Erreur lors du paiement:", error);
+    return new Response(JSON.stringify({ error: "Erreur interne du serveur" }), {
       status: 500,
     });
   }

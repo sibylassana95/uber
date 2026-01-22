@@ -7,7 +7,7 @@ export async function POST(request: Request) {
 
     if (!name || !email || !clerkId) {
       return Response.json(
-        { error: "Missing required fields" },
+        { error: "Champs requis manquants" },
         { status: 400 },
       );
     }
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       status: 201,
     });
   } catch (error) {
-    console.error("Error creating user:", error);
-    return Response.json({ error: "Internal Server Error" }, { status: 500 });
+    console.error("Erreur lors de la création de l'utilisateur:", error);
+    return Response.json({ error: "Erreur interne du serveur" }, { status: 500 });
   }
 }

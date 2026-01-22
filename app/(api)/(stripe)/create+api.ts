@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   const { name, email, amount } = body;
 
   if (!name || !email || !amount) {
-    return new Response(JSON.stringify({ error: "Missing required fields" }), {
+    return new Response(JSON.stringify({ error: "Champs requis manquants" }), {
       status: 400,
     });
   }

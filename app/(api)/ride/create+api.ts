@@ -31,7 +31,7 @@ export async function POST(request: Request) {
       !user_id
     ) {
       return Response.json(
-        { error: "Missing required fields" },
+        { error: "Champs requis manquants" },
         { status: 400 },
       );
     }
@@ -69,7 +69,7 @@ export async function POST(request: Request) {
 
     return Response.json({ data: response[0] }, { status: 201 });
   } catch (error) {
-    console.error("Error inserting data into recent_rides:", error);
-    return Response.json({ error: "Internal Server Error" }, { status: 500 });
+    console.error("Erreur lors de l'insertion des données dans les trajets récents:", error);
+    return Response.json({ error: "Erreur interne du serveur" }, { status: 500 });
   }
 }

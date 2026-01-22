@@ -15,7 +15,7 @@ const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;
 
 if (!publishableKey) {
   throw new Error(
-    "Missing Publishable Key. Please set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in your .env",
+    "Clé publiable manquante. Veuillez définir EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY dans votre fichier .env",
   );
 }
 
